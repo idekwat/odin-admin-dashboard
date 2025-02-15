@@ -2,3 +2,58 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    background-color: whitesmoke;
+
+    outline: 2px solid blue;
+
+    overflow: hidden;
+}
+
+.sidebar {
+    padding: 20px;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+
+    outline: 2px solid black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    padding: 20px;
+    display: grid;
+    grid-column: 2 / 4;
+    outline: 2px solid red;
+}
+
+.projectsContainer {
+    padding: 20px;
+    display: grid;
+    outline: 2px solid green;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    padding: 20px;
+}
+
+.announcementContainer {
+    padding: 20px;
+    display: grid;
+    outline: 2px solid brown;
+    grid-column: 3 / 4;
+}
+
+.trendingContainer {
+    padding: 20px;
+    display: grid;
+    outline: 2px solid fuchsia;
+    grid-column: 3 / 4;
+}
