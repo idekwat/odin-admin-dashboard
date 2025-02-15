@@ -6,7 +6,7 @@
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 3fr;
     background-color: whitesmoke;
 
@@ -21,7 +21,13 @@
     grid-column: 1 / 2;
     grid-row: 1 / 4;
 
+    grid-template-rows: 0.5fr 2fr 2fr;
     outline: 2px solid black;
+}
+
+.sidebar li {
+    height: 40px;
+    font-size: 20px;
 }
 
 ul {
@@ -29,10 +35,49 @@ ul {
 }
 
 .header {
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
     display: grid;
     grid-column: 2 / 4;
     outline: 2px solid red;
+}
+
+.headerTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topLeft #searchValue{
+    height: 30px;
+    border-radius: 40px;
+    width: 50vw;
+    border: none;
+    padding: 10px;
+}
+
+.topRight p{
+    display: inline;
+}
+
+.headerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: auto;
+}
+.headerBottom .profileActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 10px;
+}
+.headerBottom button {
+    height: 35px;
+    width: 90px;
+    border-radius: 30px;
+    border: .5px solid rebeccapurple;
 }
 
 .projectsContainer {
