@@ -10,41 +10,44 @@
     <div class="container">
         <div class="sidebar">
             <div class = "sidebarHeading">
-                <img src = "" id ="sidebarLogo" alt ="sidebar logo">
+                <img src = "assets/images/view-dashboard.svg" id ="sidebarLogo" alt ="sidebar logo">
                 <h1 class="sidebarTitle">Dashboard</h1>
             </div>
             <ul class = "sidebarContent">
-                <a href=""><li>Home</li></a>
-                <a href=""><li>Profile</li></a>
-                <a href=""><li>Messages</li></a>
-                <a href=""><li>History</li></a>
-                <a href=""><li>Tasks</li></a>
-                <a href=""><li>Communities</li></a>
+                <a href=""><li><img src="assets/images/home.svg" class="sidebarIcon"> Home</li></a>
+                <a href=""><li><img src="assets/images/account.svg" class="sidebarIcon">Profile</li></a>
+                <a href=""><li><img src="assets/images/tooltip-text.svg" class="sidebarIcon">Messages</li></a>
+                <a href=""><li><img src="assets/images/history.svg" class="sidebarIcon">History</li></a>
+                <a href=""><li><img src="assets/images/note-outline.svg" class="sidebarIcon">Tasks</li></a>
+                <a href=""><li><img src="assets/images/account-group.svg" class="sidebarIcon">Communities</li></a>
             </ul>
             <ul class="sidebarSettings">
-                <a href=""><li>Settings</li></a>
-                <a href=""><li>Support</li></a>
-                <a href=""><li>Privacy</li></a>
+                <a href=""><li><img src="assets/images/cog.svg" class="sidebarIcon">Settings</li></a>
+                <a href=""><li><img src="assets/images/help-circle-outline.svg" class="sidebarIcon">Support</li></a>
+                <a href=""><li><img src="assets/images/security.svg" class="sidebarIcon" >Privacy</li></a>
             </ul>
         </div>
         <div class="header">
             <div class="headerTop">
-                <div class="topLeft">                
+                <div class="topLeft">
+                    <img src="assets/images/magnify.svg" id="searchIcon" alt="searchhere">
                     <form method = "get" action = "">
                     <input type ="search" id ="searchValue" placeholder="Search...">
                 </form>
                 </div>
                 <div class="topRight">
-                    <img src="" id="notifIcon" alt="Notif Icon">
-                    <img src="" id="profileImage" alt="profileimage"> 
+                    <img src="assets/images/bell-circle-outline.svg" id="notifIcon" alt="Notif Icon">
+                    <img src="assets/images/Kessoku_Band_Logo.webp" id="profileImage" alt="profileimage"> 
                     <p id="username">username</p>
                 </div>
             </div>
             <div class="headerBottom">
                 <div class="profileGreeting">
-                    <img src="" id="profileImage" alt="Profile Image big">
-                    <p id="greeting">hi there</p>
-                    <p id="username">username(@username)</p>
+                    <img src="assets/images/Kessoku_Band_Logo.webp" id="profileImage" alt="Profile Image big">
+                    <div class="greetingDiv">
+                        <p id="greeting">Hi there,</p>
+                        <p id="username">username(@username)</p>
+                    </div>
                 </div>
                 <div class="profileActions">
                     <button id = "newPost">New</button>
@@ -54,59 +57,155 @@
             </div>
         </div>
         <div class = "projectsContainer">
-            <p class = "containerTitle">Your Projects</p>
+            <p class = "containerTitle">Song list</p>
             <div class = "projectList">
                 <div class = "projectCard">
-                    <p class = "projectTitle">project_title</p>
-                    <p class = "projectContent">add_project_description_here</p>
+                    <p class = "projectTitle">Seishun Complex</p>
+                    <p class = "projectContent">Kuraku semai no ga suki datta fukaku kaburu fuudo no naka<br>
+                        Mujou na sekai o uranda me wa doushiyou mo naku ai o hoshi teta<br>
+                        Ame ni nureru no ga suki datta kumotta kao ga niau kara<br>
+                        Arashi ni obieteru furi o shite sora ga wareru no o matte itanda<br><br>
+                        
+                        Kakinarase hikari no fazu de raimei o todorokasetainda<br>
+                        Uchinarase itami no saki e doushiyou! Daibousou doumou na kodou o<br>
+                        Kakinarase majiwaru karutetto kakumei o nashitogete mitai na<br>
+                        Uchinarase nageki no forute doushiyou? Chou honpou kyoubou na honshou o</p>
                     <div class = "projectActions">
-                        <img src = "" id="projectStar" alt="star">
-                        <img src = "" id="projectEye" alt ="eye">
-                        <img src = "" id ="projectShare" alt ="share">
+                        <a href=""><img src = "assets/images/heart-outline.svg" class="projectIcon" id="projectLike" alt="like"></a>
+                        <a href=""><img src = "assets/images/card-search-outline.svg" class="projectIcon" id="projectView" alt ="view"></a>
+                        <a href=""><img src = "assets/images/share-variant.svg" class="projectIcon" id ="projectShare" alt ="share"></a>
                     </div>
                 </div>
                 <div class = "projectCard">
-                    <p class = "projectTitle">project_title</p>
-                    <p class = "projectContent">add_project_description_here</p>
+                    <p class = "projectTitle">Distortion!!</p>
+                    <p class = "projectContent">Fumitsuke rareta kodoku to pedaru kara<br>
+                        Nando mo narihibiku neiro ga hoho ni tsutau<br>
+                        Uchitsuke rareta kodoku ni sunea no rizumu ga <br>
+                        Kasanatte Tashika na kodou ni naru <br><br>
+                        
+                        Dare ka kokoro no noizu o totte<br>
+                        Watashi o nozoite yo<br>
+                        Dare mo kokoro no oku ni wa hairenai keredo<br>
+                        Kitai shite shimau sonna yoru<br><br>
+                        
+                        Distortion it's Motion<br>
+                        Hajimattara mou tomaranai<br>
+                        Seigen mo keiken de<br>
+                        Nurikae rareru sa soudarou<br>
+                        Disutooshon itsumo sou<br>
+                        Sanou oikoshite kokoro ga hashiridasu<br>
+                        Kimi no hou e to<br><br>
+                        
+                        Tsugi no oto ni esukooto<br>
+                        Hibi no urei ni disutooshon<br>
+                        Hitori no yoru narasu koodo<br>
+                        Kimi mo onaji kai?<br>
+                        Risouzou oikaketa hibi<br>
+                        F koodo kakinarasunda disutooshon<br>
+                        Boryuumu o furikiru yo</p>
                     <div class = "projectActions">
-                        <img src = "" id="projectStar" alt="star"><img src = "" id="projectEye" alt ="eye">
-                        <img src = "" id ="projectShare" alt ="share">
+                        <a href=""><img src = "assets/images/heart-outline.svg" class="projectIcon" id="projectLike" alt="like"></a>
+                        <a href=""><img src = "assets/images/card-search-outline.svg" class="projectIcon" id="projectView" alt ="view"></a>
+                        <a href=""><img src = "assets/images/share-variant.svg" class="projectIcon" id ="projectShare" alt ="share"></a>
                     </div>
                 </div>
                 <div class = "projectCard">
-                    <p class = "projectTitle">project_title</p>
-                    <p class = "projectContent">add_project_description_here</p>
+                    <p class = "projectTitle">Karakara</p>
+                    <p class = "projectContent">Juudai na mondai kakaete nemuru<br>
+                        Aisareta hou ga tashika ni musouteki dakeredo<br>
+                        Tsumetai yume kara mezamete shibireru karada<br>
+                        Kimi ga mabushii kara watashi wa kage ni nareru<br><br>
+                        
+                        Iza fumikome<br>
+                        Tashika na koto nado hitotsu mo nai keredo<br>
+                        Osanai kokoro o asu ni hakobu no sa<br><br>
+                        
+                        Karakara sawagu shikou tobashite<br>
+                        Maegari shiteru kono inochi o<br>
+                        Tsukai kiranakucha ima kono toki mo<br>
+                        Daradara sugiru hi mo ai shite<br>
+                        Kitto kimi ni ai ni yuku<br>
+                        Itsuka kiete shimau mae ni</p>
                     <div class = "projectActions">
-                        <img src = "" id="projectStar" alt="star">
-                        <img src = "" id="projectEye" alt ="eye">
-                        <img src = "" id ="projectShare" alt ="share">
+                        <a href=""><img src = "assets/images/heart-outline.svg" class="projectIcon" id="projectLike" alt="like"></a>
+                        <a href=""><img src = "assets/images/card-search-outline.svg" class="projectIcon" id="projectView" alt ="view"></a>
+                        <a href=""><img src = "assets/images/share-variant.svg" class="projectIcon" id ="projectShare" alt ="share"></a>
                     </div>
                 </div>
                 <div class = "projectCard">
-                    <p class = "projectTitle">project_title</p>
-                    <p class = "projectContent">add_project_description_here</p>
+                    <p class = "projectTitle">Guitar to Kodoku to Aoihoshi</p>
+                    <p class = "projectContent">Totsuzen furu yuudachi aa kasa mo naiya iya<br>
+                        Sora no gokigen nanka shiranai<br>
+                        Kisetsu no kawarime no fuku wa nani kirya iindaro<br>
+                        Haru to aki doko icchattanda yo<br><br>
+                        
+                        Iki mo dekinai jouhou no atsuryoku<br>
+                        Memai no rasenda watashi wa doko ni iru<br>
+                        Konna ni konna ni iki no oto ga suru no ni<br>
+                        Henda ne sekai no oto ga shinai<br><br>
+                        
+                        Tarinai tarinai dare ni mo kizuka renai<br>
+                        Nagurigaki mitai na oto dasenai joutai de sakenda yo<br>
+                        "Ari no mama" nante dare ni miserunda<br>
+                        Baka na watashi wa utau dake<br>
+                        Buchimake chaou ka hoshi ni</p>
                     <div class = "projectActions">
-                        <img src = "" id="projectStar" alt="star">
-                        <img src = "" id="projectEye" alt ="eye">
-                        <img src = "" id ="projectShare" alt ="share">
+                        <a href=""><img src = "assets/images/heart-outline.svg" class="projectIcon" id="projectLike" alt="like"></a>
+                        <a href=""><img src = "assets/images/card-search-outline.svg" class="projectIcon" id="projectView" alt ="view"></a>
+                        <a href=""><img src = "assets/images/share-variant.svg" class="projectIcon" id ="projectShare" alt ="share"></a>
                     </div>
                 </div>
                 <div class = "projectCard">
-                    <p class = "projectTitle">project_title</p>
-                    <p class = "projectContent">add_project_description_here</p>
+                    <p class = "projectTitle">Ano Bando</p>
+                    <p class = "projectContent">Ano bando no uta ga watashi ni wa<br>
+                        Kandakaku hibiku waraigoe ni kikoeru<br>
+                        Ano bando no uta ga watashi ni wa tsunzaku<br>
+                        Fumikiri no oto mitai<br><br>
+                        
+                        Senaka o<br>
+                        Osu na yo<br>
+                        Mou soko ni ressha ga kuru<br><br>
+                        
+                        Me o tojiru kurayami ni sasu gokou<br>
+                        Mimi fusagu tashika ni kizamu kodou<br>
+                        Mune no oku mi o yurasu shinzou<br>
+                        Hoka ni nan mo kikitakunai<br>
+                        Watashi ga hanatsu oto igai</p>
                     <div class = "projectActions">
-                        <img src = "" id="projectStar" alt="star">
-                        <img src = "" id="projectEye" alt ="eye">
-                        <img src = "" id ="projectShare" alt ="share">
+                        <a href=""><img src = "assets/images/heart-outline.svg" class="projectIcon" id="projectLike" alt="like"></a>
+                        <a href=""><img src = "assets/images/card-search-outline.svg" class="projectIcon" id="projectView" alt ="view"></a>
+                        <a href=""><img src = "assets/images/share-variant.svg" class="projectIcon" id ="projectShare" alt ="share"></a>
                     </div>
                 </div>
                 <div class = "projectCard">
-                    <p class = "projectTitle">project_title</p>
-                    <p class = "projectContent">add_project_description_here</p>
+                    <p class = "projectTitle">Nani ga Warui</p>
+                    <p class = "projectContent">Nari yamanakute nani ga warui<br>
+                        Seishun de nani ga warui<br><br>
+                        
+                        Nee doushite tomaranai tomerannai rizumu ga<br>
+                        Karada no naka hibiite iru<br>
+                        Iyafon kara nagareru merodi dake ga<br>
+                        Boku o boku de isasete kureta<br><br>
+                        
+                        Akairo ni somaru sora<br>
+                        Boku no kokoro wa naniiro nandarou<br>
+                        Oshiete<br><br>
+
+                        Boku wa doko e mukaeba ii?<br>
+                        Zutto sagashite ita<br>
+                        Taisetsu na nani ka o (Hora!)<br>
+                        Itsuka nakushite shimau mono bakarinara<br>
+                        Tsuyoku kizande okou (Ima!)<br>
+                        Mijime na yoru mo baka warai mo<br>
+                        Ano ne, sono ato ga ienakatta hi mo<br>
+                        (Aimu araibu nau ie<br>
+                        Supuringutaimu obu raifu)<br>
+                        Nari yamanakute nani ga warui<br>
+                        Seishun de nani ga warui</p>
                     <div class = "projectActions">
-                        <img src = "" id="projectStar" alt="star">
-                        <img src = "" id="projectEye" alt ="eye">
-                        <img src = "" id ="projectShare" alt ="share">
+                        <a href=""><img src = "assets/images/heart-outline.svg" class="projectIcon" id="projectLike" alt="like"></a>
+                        <a href=""><img src = "assets/images/card-search-outline.svg" class="projectIcon" id="projectView" alt ="view"></a>
+                        <a href=""><img src = "assets/images/share-variant.svg" class="projectIcon" id ="projectShare" alt ="share"></a>
                     </div>
                 </div>
             </div>
@@ -115,44 +214,60 @@
             <p class="containerTitle">Announcements</p>
             <div class="announcementList">
                 <div class = "announcementCard">
-                    <p class = "announcementTitle">announcement_title</p>
-                    <p class = "announcementContent">announcement_content_here_add_more_words</p>
+                    <p class = "announcementTitle">Announcement 1</p>
+                    <p class = "announcementContent">Bocchi the Rock Season 2 was officially confirmed with a teaser trailer.</p>
                 </div>
                 <div class = "announcementCard">
-                    <p class = "announcementTitle">announcement_title</p>
-                    <p class = "announcementContent">announcement_content_here_add_more_words</p>
+                    <p class = "announcementTitle">Announcement 2</p>
+                    <p class = "announcementContent">No more announcements for now.</p>
                 </div>
                 <div class = "announcementCard">
-                    <p class = "announcementTitle">announcement_title</p>
-                    <p class = "announcementContent">announcement_content_here_add_more_words</p>
+                    <p class = "announcementTitle">Announcement 3</p>
+                    <p class = "announcementContent">Announcement 3 is just here to test whether the grid is ok with long paragraphs.
+                        I am not sure what to put here but as long as I keep it a longer than the other 2 announcements combined then I guess it'll work.
+                    </p>
                 </div>
             </div>
         </div>
         <div class = "trendingContainer">
-            <p class = "containerTitle">Trending</p>
+            <p class = "containerTitle">Members</p>
             <div class = trendingList>
                 <div class= "trendingProfile">
-                    <img src = "" id = "trendingImage" alt="pic">
-                    <p class = "trendingUsername">username_here1234</p>
-                    <p class = "trendingText">super_cool_trend</p>
+                    <img src = "assets/images/bocchi.webp" id = "trendingImage" alt="pic">
+                    <div class ="profileDetails">
+                        <p id = "trendingUsername">Hitori Gotoh</p>
+                        <p id = "trendingText">Lead Guitar</p>
+                    </div>
                 </div>
                 <div class= "trendingProfile">
-                    <img src = "" id = "trendingImage" alt="pic">
-                    <p class = "trendingUsername">username_here1234</p>
-                    <p class = "trendingText">super_cool_trend</p>
+                    <img src = "assets/images/kita.webp" id = "trendingImage" alt="pic">
+                    <div class ="profileDetails">
+                        <p id = "trendingUsername">Ikuyo Kita</p>
+                        <p id = "trendingText">Vocals, Rhythm Guitar</p>
+                    </div>
                 </div>
                 <div class= "trendingProfile">
-                    <img src = "" id = "trendingImage" alt="pic">
-                    <p class = "trendingUsername">username_here1234</p>
-                    <p class = "trendingText">super_cool_trend</p>
+                    <img src = "assets/images/nijika.webp" id = "trendingImage" alt="pic">
+                    <div class ="profileDetails">
+                        <p id = "trendingUsername">Nijika Ijichi</p>
+                        <p id = "trendingText">Drums</p>
+                    </div>
                 </div>
                 <div class= "trendingProfile">
-                    <img src = "" id = "trendingImage" alt="pic">
-                    <p class = "trendingUsername">username_here1234</p>
-                    <p class = "trendingText">super_cool_trend</p>
+                    <img src = "assets/images/ryo.webp" id = "trendingImage" alt="pic">
+                    <div class ="profileDetails">
+                        <p id = "trendingUsername">Ryo Yamada</p>
+                        <p id = "trendingText">Bass</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<!-- 
+BOCCHI PICTURES https://www.pixiv.net/en/artworks/103923317
+KESSOKU BAND IMAGE TAKEN FROM https://bocchi-the-rock.fandom.com/wiki/Bocchi_the_Rock!_Wiki
+ICONS FROM https://pictogrammers.com
+-->
