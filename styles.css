@@ -141,6 +141,7 @@ ul {
 .announcementContainer {
     padding: 20px;
     display: grid;
+    max-width: 20vw;
     outline: 2px solid brown;
     grid-column: 3 / 4;
     grid-template-rows: 0.5fr 3fr;
@@ -150,10 +151,36 @@ ul {
     grid-template-rows: repeat(auto-fill, minmax(2vh, 10vh));
 }
 
+.announcementContainer .announcementCard {
+    margin: 10px;
+    padding: 0px 10px 0px 10px;
+    border-bottom: 2px solid silver;
+    overflow-wrap: anywhere;
+}
+.announcementContainer .containerTitle {
+    padding-left: 10px;
+}
+.announcementCard .announcementTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+.announcementCard .announcementContent {
+    font-size: 16px;
+    color: gray;
+    text-wrap: wrap;
+}
 
 .trendingContainer {
     padding: 20px;
     display: grid;
     outline: 2px solid fuchsia;
     grid-column: 3 / 4;
+    grid-template-rows: .5fr 4fr;
+}
+.trendingContainer .containerTitle {
+    padding-left: 10px;
+}
+.trendingContainer .trendingList {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(1.8vh, 6vh));
 }
